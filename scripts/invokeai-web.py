@@ -11,13 +11,10 @@ logging.getLogger("xformers").addFilter(lambda record: "A matching Triton is not
 
 
 def main():
-    # Change working directory to the repo root
-    os.chdir(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-    # **Set the UI root directory explicitly**
-    web_root = "/content/InvokeAI/GUI" 
-    run_app(web_root=web_root)
+  # Change working directory to the repo root
+  os.chdir(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+  run_app()
 
 
 if __name__ == "__main__":
-    main()
+  main()
